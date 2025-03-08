@@ -1,2 +1,2 @@
-# Advent of Code 2024
-My solutions to [Advent of Code 2024](https://adventofcode.com/2024/) using Python3.
+# Advent of Code
+My solutions to Advent Of Code.
