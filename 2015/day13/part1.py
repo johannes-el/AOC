@@ -1,20 +1,21 @@
 import itertools
 from collections import defaultdict
 
+
 def main():
-    with open('./input.txt', 'r') as f:
+    with open("./input.txt", "r") as f:
         lines = f.readlines()
 
     like_status = defaultdict(dict)
 
     for line in lines:
-        parts = line.strip().split(' ')
+        parts = line.strip().split(" ")
         first_name = parts[0]
-        second_name = parts[-1].strip('.')
+        second_name = parts[-1].strip(".")
 
         # Determine if gain or lose
         happiness_score = int(parts[3])
-        if parts[2] == 'lose':
+        if parts[2] == "lose":
             happiness_score = -happiness_score
 
         like_status[first_name][first_name] = 0
@@ -45,5 +46,5 @@ def main():
     print(max_score)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
